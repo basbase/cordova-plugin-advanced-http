@@ -385,7 +385,7 @@ module.exports = function init(global, jsUtil, cookieHandler, messages, base64, 
       case 'urlencoded':
         return ['Object'];
       case 'json':
-        return ['Array', 'Object'];
+        return ['Array', 'Object', 'Null', 'Undefined'];
       case 'raw':
         return ['Uint8Array', 'ArrayBuffer'];
       default:
